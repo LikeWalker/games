@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+	<style type="text/css">
+
+		.boxs {
+			height: 100px;
+			width: 100px;
+			background-color: red;
+			border: solid;
+			position: absolute;
+		}
+		.firsBox {
+			background-image: url(tanjiro.png);
+			background-size: 100% 100%;
+		}
+		.demon{
+			background-image: url(Demon.png);
+			background-size: 100% 100%;
+		}
+		.rui{
+			background-image: url(rui.png);
+			background-size: 100% 100%;
+		}
+		.demon2{
+			background-image: url(demon2.png);
+			background-size: 100% 100%;
+		}
+		.demon3{
+			background-image: url(demon3.png);
+			background-size: 100% 100%;
+		}
+		.teacher{
+			background-image: url(teacher.png);
+			background-size: 100% 100%;
+		}
+		.demon4{
+			background-image: url(demon4.png);
+			background-size: 100% 100%;
+		}
+		.stolp{
+			background-image: url(stolp.png);
+			background-size: 100% 100%;
+		}
+		.kokushibo{
+			background-image: url(Kokushibo.png);
+			background-size: 100% 100%;
+		}
+		.nezuko{
+			background-image: url(nezuko.png);
+			background-size: 100% 100%;
+		}
+		.zenitsu{
+			background-image: url(zenitsu.png);
+			background-size: 100% 100%;
+		}
+		.text{
+			color: white;
+		}
+	</style>
+</head>
+<body>
+	<div class="content">
+		<h4 style="margin-left: 20px">Score: <span class="score">150</span></h4>
+		<img src="dice.png" class="bt" style="width: 100px; margin-left: 20px">		
+		<div class="boxs firsBox" style="margin-left: 20px">
+		</div>
+		<div class="boxs" style="margin-left: 130px">1</div>
+		<div class="boxs" style="margin-left: 240px">2</div>
+		<div class="boxs demon" style="margin-left: 350px; background-color: red">3</div>
+				
+		<div class="boxs" style="margin-left: 460px">4</div> 
+		<div class="boxs" style="margin-left: 570px">5</div>
+		<div class="boxs demon2" style="margin-left: 680px;  background-color: red">6</div>
+		<div class="boxs" style="margin-left: 790px">7</div>
+
+		<div class="boxs" style="margin-left: 900px">8</div>
+		<div class="boxs demon3" style="margin-left: 1010px;background-color: red" >9</div>
+		<div class="boxs" style="margin-left: 1120px">10</div>
+		<div class="boxs" style="margin-left: 1230px">11</div>
+
+		<div class="boxs rui" style="margin-left: 1340px;background-color: red">12 
+		</div>
+		<div class="boxs" style="margin-left: 1340px; margin-top: 110px">13</div>
+		<div class="boxs" style="margin-left: 1340px; margin-top: 220px">14</div>	
+		<div class="boxs teacher" style="margin-left: 1340px; margin-top: 330px">15</div>		
+
+		<div class="boxs" style="margin-left: 1340px; margin-top: 440px">16</div>
+		<div class="boxs" style="margin-left: 1230px; margin-top: 440px">17</div>
+		<div class="boxs" style="margin-left: 1120px; margin-top: 440px">18</div>
+		<div class="boxs demon4" style="margin-left: 1010px; margin-top: 440px">19</div>
+
+		<div class="boxs" style="margin-left: 900px; margin-top: 440px">20</div>
+		<div class="boxs" style="margin-left: 790px; margin-top: 440px">21</div>
+		<div class="boxs zenitsu" style="margin-left: 680px; margin-top: 440px">22</div>
+		<div class="boxs" style="margin-left: 570px; margin-top: 440px">23</div>
+
+		<div class="boxs stolp" style="margin-left: 460px; margin-top: 440px">24</div>
+		<div class="boxs" style="margin-left: 350px; margin-top: 440px">25</div>
+		<div class="boxs" style="margin-left: 240px; margin-top: 440px">26</div>
+		<div class="boxs" style="margin-left: 130px; margin-top: 440px">27</div>
+
+		<div class="boxs kokushibo" style="margin-left: 20px; margin-top: 440px">28</div>
+		<div class="boxs" style="margin-left: 20px; margin-top: 330px">29</div>
+		<div class="boxs" style="margin-left: 20px; margin-top: 220px">30</div>	
+		<div class="boxs nezuko" style="margin-left: 20px; margin-top: 110px">
+			<h4 class="text">finish</h4> 31</div>		
+
+		<div class="boxs" style="margin-left: 130px; margin-top: 110px; background-color: green; opacity: 0"></div>
+		<div class="boxs" style="margin-left: 240px; margin-top: 110px; background-color: green; opacity: 0"></div>
+		<div class="boxs" style="margin-left: 350px; margin-top: 110px; background-color: green; opacity: 0"></div>
+		<div class="boxs" style="margin-left: 460px; margin-top: 110px; background-color: green; opacity: 0"></div>
+		<div class="boxs" style="margin-left: 570px; margin-top: 110px; background-color: green; opacity: 0"></div>
+		<div class="boxs" style="margin-left: 680px; margin-top: 110px; background-color: green; opacity: 0"></div>
+
+	</div>	
+<script type="text/javascript">
+  let cube = document.querySelector('.bt')
+  let boxes = document.querySelectorAll('.boxs')
+  let duck = document.querySelector('.firsBox')
+  let steps = 0;
+  let score = 150;
+  let content = document.querySelector('.content');
+  let scores = document.querySelector('.score');
+  let scorePoints = function(points){
+		score = score + points;
+		scores.innerHTML = score;
+	}
+  	cube.onclick = function(){
+		boxes[steps].style.backgroundImage = 'none';
+		let randNum = Math.random() * 5;
+		let roundNum = Math.round(randNum);
+		steps = steps + roundNum;
+		alert( "Иди на " + roundNum +  " на клетку " + steps);
+		boxes[steps].style.backgroundImage = 'url(tanjiro.png)';
+		boxes[steps].style.backgroundSize = '100% 100%';
+		if(roundNum == 0){
+			scoresPoints(0);
+		}
+		if(roundNum > 0){
+			scorePoints(10);
+		}
+		if(steps == 3 || steps == 6 || steps == 9){
+			alert(" Тебе не стоит драться, иди на 1 клетку назад ");
+			steps = steps - 1;
+			scorePoints(- 20);
+			boxes[3].style.backgroundImage = '';
+			boxes[6].style.backgroundImage = '';
+			boxes[9].style.backgroundImage = '';
+			boxes[steps].style.backgroundImage = 'url(tanjiro.png)';
+			boxes[steps].style.backgroundSize = '100% 100%';
+		}
+		if(steps == 12){
+			alert('Тебе встретился Руи, он был пятой низшей луной, тебе стоит от него убежать, и не попадаться ему вообще');
+			steps = steps - 5;
+			boxes[12].style.backgroundImage = '';
+			boxes[steps].style.backgroundImage = 'url(tanjiro.png)';
+			boxes[steps].style.backgroundSize = '100% 100%';
+		}
+		if(steps == 15){
+			alert('Тебе встретился учитель Урокодаки, он тебе немного поможет в твоёи путешествии');
+			steps = steps + 2;
+			boxes[15].style.backgroundImage = '';
+			boxes[steps].style.backgroundImage = 'url(tanjiro2.png)';
+			boxes[steps].style.backgroundSize = '100% 100%';
+		}
+		if(steps == 16){
+			boxes[steps].style.backgroundImage = 'url(tanjiro2.png)';
+		}
+		if(steps == 17){
+			boxes[steps].style.backgroundImage = 'url(tanjiro2.png)';
+		}
+		if(steps == 18){
+			boxes[steps].style.backgroundImage = 'url(tanjiro2.png)';
+		}
+		if(steps == 19){
+			alert('Он посильнее тех демонов кто был сзади, тебе лучше всего оступить назад');
+			steps = steps - 3;
+			boxes[19].style.backgroundImage = '';
+			boxes[steps].style.backgroundImage = 'url(tanjiro2.png)';
+			boxes[steps].style.backgroundSize = '100% 100%';
+		}
+		if(steps == 20){
+			boxes[steps].style.backgroundImage = 'url(tanjiro2.png)';
+		}
+		if(steps == 21){
+			boxes[steps].style.backgroundImage = 'url(tanjiro2.png)';
+		}
+		if(steps == 22){
+			alert('Тебе встретился Зеницу, ты с ним поздоровался, и ушёл дальше ');
+			steps = steps + 1;
+			boxes[22].style.backgroundImage = '';
+			boxes[steps].style.backgroundImage = 'url(tanjiro2.png)';
+			boxes[steps].style.backgroundSize = '100% 100%';
+		}
+		if(steps == 23){
+			boxes[steps].style.backgroundImage = 'url(tanjiro2.png)';
+		}
+		if(steps == 24){
+			alert('Тебе встретился Гемён, он самый сильный Столп, он то тебе и поможет дойти до конца');
+			steps = steps + 7;
+			boxes[24].style.backgroundImage = '';
+			boxes[steps].style.backgroundImage = 'url(tanjiro2.png)';
+			boxes[steps].style.backgroundSize = '100% 100%';
+		}
+		if(steps == 25){
+			boxes[steps].style.backgroundImage = 'url(tanjiro2.png)';
+		}
+		if(steps == 26){
+			boxes[steps].style.backgroundImage = 'url(tanjiro2.png)';
+		}
+		if(steps == 27){
+			boxes[steps].style.backgroundImage = 'url(tanjiro2.png)';
+		}
+
+		if(steps == 28){
+			alert('Тебе встретился Кокушибо, он самый сильнейший демон среди высших лун, ТЕБЕ КОНЕЦ! ');
+			content.style.display = 'none';
+		}
+		if(steps >= 31){
+			alert('Ты наконец-то добрался до Незуко, ты победил!');
+			content.style.display = 'none';
+		}
+		
+	}
+	
+</script>		
+</body>
+</html>
